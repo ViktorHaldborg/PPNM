@@ -1,0 +1,9 @@
+clear
+set term svg background rgb "white"
+set out "gamma.svg"
+set key right bottom
+set title "Gamma function"
+set xlabel "x"
+set ylabel "y"
+set yrange [-4:4]
+plot "gamma_func_output_values.txt" with lines, "tabval.txt" ps 2

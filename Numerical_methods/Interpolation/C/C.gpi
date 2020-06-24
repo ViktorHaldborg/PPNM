@@ -1,0 +1,11 @@
+set term svg background rgb "white"
+set key outside bottom horizontal
+set out "C.svg"
+set title "Cubic interpolation"
+set tics out
+set grid
+set ylabel "y"
+set xlabel "x"
+set xrange [0:2*3.1415]
+set samples 100
+plot "ManualValues.txt" using 1:2 every 10::0::10000 title "y(x)=Sin(x)" pt 7 ps 0.75, "CubicSpline.txt" using 1:2 every 2::0::10000 title "Splined data points" pt 7 ps 0.35, "CubicSpline.txt" using 1:3 w l title "Integral", "ManualValues.txt" using 1:3 every 10::0::10000 title "1-Cos(x) data points" pt 7 ps 0.75, "CubicSpline.txt" using 1:4 w l title "Derivative", "ManualValues.txt" using 1:4 every 10::0::10000 title "Cos(x) data points" pt 7 ps 0.75,'ManualValues.txt' using 1:2 smooth cspline t "PlotUtils spline"

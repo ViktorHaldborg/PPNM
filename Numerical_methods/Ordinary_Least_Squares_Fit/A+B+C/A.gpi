@@ -1,0 +1,25 @@
+set term svg background rgb "white"
+set out "A.svg"
+set tics out
+set grid
+set ylabel "Activity"
+set xlabel "Time"
+set style arrow 1 nohead lw 1.1
+set style arrow 2 dt 12 nohead
+set arrow arrowstyle 1 from 1,0 to 1,123
+
+set arrow arrowstyle 2 from 5.04451793348687,0 to 5.04451793348687,60
+set arrow arrowstyle 2 from 1,60 to 5.04451793348687,60
+
+
+set arrow arrowstyle 2 from 9.08903587,0 to 9.08903587,30
+set arrow arrowstyle 2 from 1,30 to 9.08903587,30
+
+set arrow arrowstyle 2 from 13.1335538,0 to 13.1335538,15
+set arrow arrowstyle 2 from 1,15 to 13.1335538,15
+
+set label 't_{(1/2)}(ThX)=4.044517 days(as hinted at in the figure)' at 5,70
+set label 't_{(1/2)}(^{224}Ra)=3.6319(23) days' at 7,55
+
+plot "Data.txt" using 1:2:3 w yerrorbars pt 1 title "Raw data with errorbars","DataOut.txt" using 1:2 title "Least squares fit" w l
+

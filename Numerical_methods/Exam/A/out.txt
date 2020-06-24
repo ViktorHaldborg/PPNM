@@ -1,0 +1,58 @@
+
+**********************************************************
+Eigenvalues of updated matrix: symmetric row/column update
+
+Our initial parameters n and p are randomly generated to be: n=3 & p=2
+
+With our direction vector e(2) =
+
+         0 
+         1 
+         0 
+
+Our update vector u =
+
+       5.3 
+         0 
+      5.16 
+
+Our diagonal matrix D =
+
+      7.56          0          0 
+         0       2.42          0 
+         0          0       6.77 
+
+Our update matrix W =
+
+         0        5.3          0 
+       5.3          0       5.16 
+         0       5.16          0 
+
+We now obtain the matrix A=D+W, which we wish to diagonalize.
+Check that A is symmetric:
+
+A =
+
+      7.56        5.3          0 
+       5.3       2.42       5.16 
+         0       5.16       6.77 
+
+Test passed: A is symmetric
+
+Matrix A diagonalized using update matrix =
+
+     -2.98          0          0 
+         0       7.14          0 
+         0          0       12.6 
+
+Matrix A found from Jacobi diagonalization =
+
+     -2.98          0          0 
+         0       7.14          0 
+         0          0       12.6 
+
+
+Diagonalization of A completed
+
+
+

@@ -1,0 +1,17 @@
+A)
+My max Z = 2147483647 & int.MaxValue=2147483647
+My min Z = -2147483648 & int.MinValue=-2147483648
+
+B)
+Machine double Ɛ = 2.22044604925031E-16
+Machine float Ɛ = 1.192093E-07
+
+C)
+float_sum_up=15.40368
+float_sum_down=18.80792
+
+The harmonic series is divergent, but due to limitations of a computer, the sum will converge. The difference in the results of the two summations of real numbers using float based arithmetic is a direct consequence of the accumulated errors from rounding: When summing the computer rounds to the nearest representable number(with 32 bits for floats.
+double_sum_up=20.9661659719623
+double_sum_down=20.9661659733582
+
+For double precision the rounding errors are less prominent since the amount of bits used in its representation is higher than for floats(mantissa is 52 and 23 respectively

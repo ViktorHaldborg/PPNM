@@ -1,0 +1,9 @@
+set term svg background "white"
+set out "A.svg"
+set grid
+set key bottom right
+set title font ",15" "y(x)^{(2)}=-y(x) numerically solved by embedded Heun-Euler method with y(0)=1"
+set xlabel "x"
+set ylabel "y(x)"
+plot "out.txt" every 20::0::10000 t "Numerical solution" \
+, cos(x) t "Known solution: Cos(x) 

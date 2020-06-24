@@ -1,0 +1,9 @@
+set term svg background rgb "white"
+set key bottom left
+set title "Linear interpolation"
+set out "A.svg"
+set tics out
+set grid
+set ylabel "y"
+set xlabel "x"
+plot "TabulatedValues.txt" using 1:2 title "Sin(x) data points" pt 7, "LinSpline.txt" using 1:2 title "Splined data points" pt 7 ps 1, "LinSpline.txt" using 1:3 w l title "Integral", "TabulatedValues.txt" using 1:3 title "1-Cos(x) data points" pt 7

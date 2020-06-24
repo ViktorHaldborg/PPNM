@@ -1,0 +1,12 @@
+set term svg background rgb "white"
+set grid
+set border
+set xlabel "n"
+set ylabel "Time(milliseconds)"
+set title "Time comparisons(Note that I have a stricter convergence criterium on classical)"
+set key outside top horizontal
+set out "Time.svg"
+set multiplot layout 2,1
+plot "MainTime.txt" u 1:2 pt 7 ps 1.5 t "Sweep method O(n^{3})", "MainTime.txt" u 1:4 smooth cspline  t "10^{-4}*n^{3}"
+plot "Time.txt" u 1:2 pt 7 ps 1.5 t "Classical method(refined) with O(n) search", "Time.txt" u 1:4 smooth cspline t "n^{2}/50"
+

@@ -1,0 +1,8 @@
+set term svg background rgb "white"
+set out "C.svg"
+set tics out
+set grid
+set ylabel "Activity"
+set xlabel "Time"
+plot "Data.txt" using 1:2:3 w yerrorbars pt 1 title "Raw data with errorbars","DataOut.txt" u 1:2 title "c_{0} , c_{1}" w l,"DataOut.txt" using 1:5 title "c_{0}+δc_{0} , c_{1}" w l, "DataOut.txt" u 1:6 title "c_{0}-δc_{0}, c_{1}" w l, "DataOut.txt" u 1:7 title "c_{0}, c_{1}+δc_{1}" w lines,  "DataOut.txt" using 1:8 title "c_{0}, c_{1}-δc_{1}" with l,
+

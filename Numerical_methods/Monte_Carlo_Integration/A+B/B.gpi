@@ -1,0 +1,10 @@
+set term svg background rgb "white"
+set key top right
+set title "Monte carlo integration of sin(x): Error estimation"
+set out "B.svg"
+set tics out
+set grid
+set ylabel "Error"
+set xlabel "N"
+set yrange [0:0.035]
+plot "B.txt" using 1:2 title "(Sqrt(N))^{-1}" smooth cspline, "B.txt" using 1:3 smooth cspline title "Estimated error", "B.txt" using 1:4 pt 7 ps 0.45 title "Actual error"

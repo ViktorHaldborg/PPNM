@@ -1,0 +1,12 @@
+set term svg background rgb "white"
+set grid
+set border
+set xlabel "n"
+set ylabel "Time(milliseconds)"
+set key outside top horizontal
+set out "Time.svg"
+set multiplot layout 2,2
+plot "Time.txt" u 1:2 pt 7 ps 1.5 t "Sweep method O(n^{3})", "Time.txt" u 1:4 smooth cspline  t "10^{-4}*n^{3}"
+plot "TimeCyclic.txt" u 1:2 pt 7 ps 1.5 t "Cyclic method O(n^{2})", "TimeCyclic.txt" u 1:4 smooth cspline t "10^{-1}*n^{2}"
+plot "TimeVBV.txt" u 1:2 pt 7 ps 1 t "VBV only lowest eigenvalue"
+plot "TimeVBVfull.txt" u 1:2 pt 7 ps 1 t "VBV"

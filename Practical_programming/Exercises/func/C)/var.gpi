@@ -1,0 +1,13 @@
+clear
+set term svg background rgb "white"
+set zeroaxis
+set out "var.svg"
+set key right top
+set title "Variational method"
+set xlabel "a"
+set ylabel "E(a)"
+set xrange [0:3.1]
+set yrange [0:3.1]
+set label 'E(1) yields the energy for the dimensionless HO in its groundstate' at 0.3,2
+set arrow from 1,1.9 to 1,0.5
+plot "var.txt" with lines

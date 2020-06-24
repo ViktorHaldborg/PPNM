@@ -1,0 +1,70 @@
+
+A) Recursive adaptive integration routine results:
+
+
+ Integration of x^(1/2) from 0 to 1:
+
+ = 0.666953909054655 ~ 2/3 in 57 operation(s) 
+ 
+4*Sqrt(1-x^2) from 0 to 1: 
+ 
+ = 3.14183457802727 ~ π in 105 operation(s) 
+ 
+
+B) Results on integrable divergencies:
+
+ 1/Sqrt(x) from 0 to 1:
+
+ = 1.99996150007805 ~ 2 in 34281 operation(s) 
+ 
+Ln(x)/Sqrt(x) from 0 to 1: 
+ 
+ = -3.99991705899915 ~ -4 in 34409 operation(s) 
+
+
+Results on integrable divergencies using Clenshaw Curtis transformation:
+
+
+ 1/Sqrt(x) from 0 to 1:
+
+ = 1.99999201046432 ~ 2 in 57 operation(s) 
+ 
+ Ln(x)/Sqrt(x) from 0 to 1:
+
+ = -3.9998738564614 ~ -4 in 1 operation(s) 
+
+ 
+Results integrating 4*Sqrt(1-x^2) from 0 to 1 with maximum significant digits:
+
+
+Adaptive integration routine:
+
+ = 3.14159265358979 ~ π in 9918025 operation(s) 
+ 
+Clenshaw Curtis routine:
+  
+ = 3.14159265358979 ~ π in 14373433 operation(s) 
+ 
+quad.o8av routine:
+  
+ = 3.14159265358979 ~ π in 961 operation(s) (Superior) 
+
+
+ C) Integrating e^(-x) from 0 to infinity:
+
+ = 1.00000000001197 ~ 1(as wished) in 29321 operation(s)
+
+
+ Integrating 1/(x-1)^2 from -infinity to 0:
+
+ = 1 which should equal 1(as wished) in 9 operation(s)
+
+
+ Integrating gaussian function e^(-x^2) from -infinity to infinity:
+
+ = 1.77245384990255 ~ Sqrt(PI) (as wished) in 81809 operation(s)
+
+
+ Integral performed using superior quad.o8av routine:
+
+ = 1.77245385082254 ~ Sqrt(PI) (as wished) in 369 operation(s)!

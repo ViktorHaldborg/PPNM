@@ -1,0 +1,22 @@
+
+
+Finding a minimum of the Rosenbrock function:
+
+ Required precision on the gradient: Ɛ=1E-08 
+
+ Initial guess: (2,5)  
+
+ Converged to the point: (0.999928370650214,0.999856627233107) in 146 steps, with a=1 and b=100 the analytical minima is at (1,1) 
+
+
+
+
+Finding a mininum of the Himmelblau's function:
+
+ Required precision on the gradient: Ɛ=1E-08 
+
+ Initial guess: (2,5)  
+
+ Converged to the point: (2.99999965138524,1.99999996665031) in 22 steps, an analytical minima is at (3,2) 
+
+

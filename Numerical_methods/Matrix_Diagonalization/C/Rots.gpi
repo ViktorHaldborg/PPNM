@@ -1,0 +1,12 @@
+set term svg background rgb "white"
+set grid
+set border
+set xlabel "n"
+set ylabel "Rotations"
+set title "Rotation comparisons(Note that I have a stricter convergence criterium on classical)"
+set key outside top horizontal
+set out "Rots.svg"
+set multiplot layout 2,1
+plot "MainTime.txt" u 1:3 pt 7 ps 1.5 t "Sweep method O(n^{3})"
+plot "Time.txt" u 1:3 pt 7 ps 1.5 t "Classical method(refined) with O(n) search"
+

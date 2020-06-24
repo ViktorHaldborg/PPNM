@@ -1,0 +1,10 @@
+clear
+set term svg background rgb "white"
+set zeroaxis
+set out "cgamma.svg"
+set key right bottom
+set title "complex gamma function"
+set xlabel "x"
+set ylabel "y"
+set yrange [-4:4]
+plot "cgamma_out.txt" with lines

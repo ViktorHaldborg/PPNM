@@ -1,0 +1,27 @@
+
+A)
+
+ Monte Carlo integration of Rosenbrock and Himmelblau's functions from 0 to π
+
+  Rosenbrock function:
+
+   f(x,y) = (1-x)^2+10*(y-x^2)^2
+   Expected result = 1238.7 
+   MC result = 1235.5 
+   Estimated error = 2.2
+   Actual error = 3.2
+
+  Himmelblau function:
+
+   f(x,y) = (x^2+y-11)^2+(x+y^2-7)^2
+   Expected result = 604.2 
+   MC result = 604.8 
+   Estimated error = 0.7
+   Actual error = 0.6
+
+ Evaluating the integral ∫dx ∫dy ∫dz (1/π)³[1-cos(cos)y(x)cos(z)]^(-1) from 0 to π in all 3 dimensions:
+
+  Expected result = 1.3932 
+  MC result = 1.3814 
+  Estimated error = 0.0061
+  Actual error = 0.0118

@@ -1,0 +1,5 @@
+Lowest bound state energy of radial hydrogen wavefunction(l=0) 
+
+ Numerial result=-0.499975125901037 
+
+ Analytical result=-0.5

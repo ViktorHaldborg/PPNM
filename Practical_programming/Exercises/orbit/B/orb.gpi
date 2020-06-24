@@ -1,0 +1,9 @@
+set term svg background rgb "white"
+set zeroaxis
+set out "orb3.svg"
+set key right top
+set title "Exercise B(3)"
+set size square
+set ylabel "y"
+set xlabel "x"
+plot "out.txt" using (1/$2)*cos($1):(1/$2)*sin($1) w l t "y(0)=1, y'(0)=0.5, ε=0.01"

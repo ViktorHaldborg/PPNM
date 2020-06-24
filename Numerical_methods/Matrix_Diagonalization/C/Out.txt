@@ -1,0 +1,40 @@
+Randomly generated symmetric square matrix A=
+
+        18       8.94       5.47       12.3       16.9 
+      8.94       8.17       10.6       14.1       14.6 
+      5.47       10.6       9.47         17       18.3 
+      12.3       14.1         17       9.46       14.4 
+      16.9       14.6       18.3       14.4       11.8 
+
+D=
+
+        65   -0.00199   5.15e-10          0  -1.18e-09 
+  -0.00199       10.3          0   6.63e-11   4.63e-19 
+  5.15e-10          0      -1.64  -1.72e-17   1.84e-12 
+         0   6.63e-11  -1.72e-17       -4.3   3.93e-17 
+ -1.18e-09   4.63e-19   1.84e-12   3.93e-17      -12.5 
+
+V=
+
+     -0.43      0.835     -0.085      0.137      0.302 
+    -0.393     -0.165      0.834     -0.252      0.245 
+    -0.428     -0.486     -0.471    0.00774      0.599 
+    -0.459     -0.197      0.095       0.75     -0.423 
+    -0.516    0.00744     -0.258     -0.596     -0.558 
+
+V(^T)AV=
+
+        65   -0.00199   5.15e-10  -1.07e-14  -1.18e-09 
+  -0.00199       10.3  -3.47e-15   6.63e-11   2.84e-16 
+  5.15e-10  -3.32e-15      -1.64  -1.11e-15   1.84e-12 
+ -1.33e-14   6.63e-11  -2.89e-15       -4.3          0 
+ -1.18e-09  -8.19e-16   1.84e-12          0      -12.5 
+
+Obtained eigenvalues of A:
+
+65.040 10.274 -1.644 -4.300 -12.509 
+
+Diagonalization using classical Jacobi succesfull: Completed in 16 iterations
+
+
+The comparisons between the sweep and classical Jacobi shows approximately same computation time even though the search was refined to an O(n) operation. The rotation times show clearly that the matrix is diagonalized in significantly less iterations of the full sweeps compared to diagonalization through elimination of the largest off diagonal element in each row.

@@ -1,0 +1,11 @@
+
+Minimization of the deviation of Breit-Wigner function:
+
+ Desired precision(Ɛ) = 1E-06
+ Initial guess(A,m,Γ): (5,130,1)
+
+Estimated parameters:
+
+ A = 9.87468803556729
+ m = 125.972177523563
+ Γ = 2.08602203669113

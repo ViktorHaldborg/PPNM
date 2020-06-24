@@ -1,0 +1,2 @@
+int1=0.886226939229309 expected 0.88(Gamma function)
+int2=1.64493404596174 expected 1.64(Bernoulli number)

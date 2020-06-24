@@ -1,0 +1,23 @@
+Operation was completed in 6 steps
+
+Obtained roots = -1.84390889145858 with x0=-3
+
+Inserting into f(x)=x²-3.4 we find:
+
+f(-1.84390889145858)=4.44089209850063E-16 which rounded is 0 as wished.
+
+Operation was completed in 6 steps
+
+Obtained roots = 1.84390889145858 with x0=3
+
+Inserting into f(x)=x²-3.4 we find:
+
+f(1.84390889145858)=4.44089209850063E-16 which rounded is 0 as wished.
+
+Rosenbrock function: Operation was completed in 8940 steps
+
+Obtained root = (1.00000000744693,1.00000001484831) with x0_2=(1.5,25)
+Inserting into the gradient of the Rosenbrock function: f(x,y)=(-2*(1-x)+100*2*(y-x*x*2*x, 100*2*(y-x*x)) we find:
+
+f(1.00000000744693,1.00000001484831)=(-3.32446128648145E-09,-9.10915787244448E-09) ~ (0,0) after rounding, as wished.
+

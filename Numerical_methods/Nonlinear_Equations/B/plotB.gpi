@@ -1,0 +1,10 @@
+set term svg background rgb "white"
+set grid
+set out "plotB.svg"
+set title "Radial Schrödinger wavefunction"
+set key top right
+set xlabel "r"
+set ylabel "F(r)"
+set yrange[0:0.5]
+plot "B.txt" u 1:2 smooth cspline t "Numerical", "B.txt" u 1:3 t "Analytical"
+

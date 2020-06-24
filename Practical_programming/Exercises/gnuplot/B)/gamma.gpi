@@ -1,0 +1,10 @@
+clear
+set term svg background rgb "white"
+set zeroaxis
+set out "loggamma.svg"
+set key right bottom
+set title "LnGamma function"
+set xlabel "x"
+set ylabel "y"
+set yrange [-4:4]
+plot "gamma_func_output.txt" with lines
